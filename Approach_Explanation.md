@@ -7,10 +7,10 @@
     1. **Max-Heap**: Utilize a max-heap to efficiently retrieve and manage the largest elements. In Python, this is done using the `heapq` library by storing negative values to simulate a max-heap.
     2. **Negation**: Negate the values of the elements when adding them to the heap, as Python's `heapq` implements a min-heap by default.
     3. **Selection and Reduction**:
-    - Pop the largest (negated) element from the heap.
-    - Add the original value to the total score.
-    - Reduce the value by dividing it by 3 and rounding up using `math.ceil`.
-    - Push the reduced value (negated) back into the heap.
+        - Pop the largest (negated) element from the heap.
+        - Add the original value to the total score.
+        - Reduce the value by dividing it by 3 and rounding up using `math.ceil`.
+        - Push the reduced value (negated) back into the heap.
     4. **Repeat** this process until `k` elements have been selected.
 
 - ### Time Complexity
